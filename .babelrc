@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "useBuiltIns": "entry",
+      "corejs": 3
+    }],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  },
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    "@babel/plugin-transform-regenerator",
+    "minify-builtins"
+  ]
+}

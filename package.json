@@ -1,0 +1,43 @@
+{
+  "name": "nonCRAtemplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "webpack/typescript/babel/react template. CRA is good but I wanted more control. uses babel-typescript presets",
+  "scripts": {
+    "bundle": "webpack",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "check-types": "tsc"
+  },
+  "browserslist": [">3%, not dead","IE 11"],
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/plugin-transform-regenerator": "^7.7.5",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-minify-builtins": "^0.5.0",
+    "css-loader": "^3.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.1",
+    "tslint": "^5.20.1",
+    "tslint-immutable": "^6.0.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "core-js": "^3.6.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass-loader": "^8.0.0"
+  }
+}
