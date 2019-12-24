@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
 
     // webpack will take the files from ./src/index
@@ -39,5 +40,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 5080
+    },
+    optimization: {
+        minimize:true,
+        minimizer: [new TerserPlugin()]
+    },
+
+    devtool: "cheap-module-source-map"
 };
