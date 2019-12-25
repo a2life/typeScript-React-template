@@ -1845,6 +1845,11 @@ core-js-compat@^3.6.0:
     browserslist "^4.8.2"
     semver "7.0.0"
 
+core-js@^3.4.7:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.1.tgz#39d5e2e346258cc01eb7d44345b1c3c014ca3f05"
+  integrity sha512-186WjSik2iTGfDjfdCZAxv2ormxtKgemjC3SI6PL31qOA0j5LhTDVjHChccoc7brwLvpvLPiMyRlcO88C4l1QQ==
+
 core-js@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.0.tgz#2b854e451de1967d1e29896025cdc13a2518d9ea"
@@ -5817,6 +5822,13 @@ trim-newlines@^1.0.0:
   integrity sha512-m6s2OdQe5wgpFMC+pAJ+q9djG82O2jcHPOI6RNg1yy9rCYR+WD6Nbpl32fDpfC56nirdRy+opFa/Vk7HYhqaew==
   dependencies:
     glob "^7.1.2"
+
+ts-polyfill@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/ts-polyfill/-/ts-polyfill-3.7.3.tgz#ed3de1e87506204929e5e04f49315325e86a29a4"
+  integrity sha512-orh7qRvVrESagLiDeTb4hc/YA9KmGmwYK6c4I3UauMG1I/mh4e5PolvF1rWCLnRr7PmG1QH18gvXh/THJgvpLg==
+  dependencies:
+    core-js "^3.4.7"
 
 tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
